@@ -17,7 +17,7 @@ Requires(post): chkconfig
 
 Summary: High performance web server
 Name: nginx
-Version: 1.11.6
+Version: 1.11.9
 Release: 1.kyberia
 Vendor: nginx inc.
 URL: http://nginx.org/
@@ -295,6 +295,9 @@ if [ $1 -ge 1 ]; then
 fi
 
 %changelog
+* Tue Jan 24 2017 Radovan Putec <rdvn@me.com>
+- bump nginx to 1.11.9
+
 * Wed Oct 16 2016 Radovan Putec <rdvn@me.com>
 - bump nginx to 1.11.6
 
