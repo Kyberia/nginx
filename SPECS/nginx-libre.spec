@@ -1,7 +1,7 @@
 %define nginx_home %{_localstatedir}/cache/nginx
 %define nginx_user nginx
 %define nginx_group nginx
-%define libressl_version 2.5.0
+%define libressl_version 2.5.1
 
 # distribution specific definitions
 %define use_systemd (0%{?fedora} && 0%{?fedora} >= 18) || (0%{?rhel} && 0%{?rhel} >= 7)
@@ -18,7 +18,7 @@ Requires(post): chkconfig
 Summary: High performance web server
 Name: nginx
 Version: 1.11.9
-Release: 1.kyberia
+Release: 2.kyberia
 Vendor: nginx inc.
 URL: http://nginx.org/
 
@@ -295,6 +295,9 @@ if [ $1 -ge 1 ]; then
 fi
 
 %changelog
+* Wed Feb 01 2017 Radovan Putec <rdvn@me.com>
+- bump libressl to 2.5.1
+
 * Tue Jan 24 2017 Radovan Putec <rdvn@me.com>
 - bump nginx to 1.11.9
 
